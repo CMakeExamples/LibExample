@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(ImSharedLib)
+add_library(imsharedlib SHARED imsharedlib.c)
+target_compile_definitions(imsharedlib PRIVATE -DIM_SHARED_LIB_EXPORTS)
+target_include_directories(imsharedlib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

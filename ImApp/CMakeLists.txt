@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(ImApp)
+add_executable(imapp main.cpp)
+target_link_libraries(imapp PRIVATE imstaticlib)
+target_link_libraries(imapp PRIVATE imsharedlib)
+target_link_libraries(imapp PRIVATE imtweaklib)
