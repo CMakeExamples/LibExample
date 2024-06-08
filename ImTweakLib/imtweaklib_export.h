@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef OPTION_IM_TWEAK_LIB_BUILD_SHARED
+#ifdef IM_TWEAK_LIB_BUILD_SHARED
     #if _WIN32
         #ifdef IM_TWEAK_LIB_EXPORTS
             #define IM_TWEAK_LIB_API __declspec(dllexport)
@@ -9,7 +9,7 @@
         #endif
     #else
         #define IM_TWEAK_LIB_API
-    #endif
+    #endif //! _WIN32
 #else
-#   define IM_TWEAK_LIB_API
+#define IM_TWEAK_LIB_API
 #endif
