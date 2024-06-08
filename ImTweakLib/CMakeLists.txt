@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(ImTweakLib C)
+project(ImTweakLib LANGUAGES C)
 include(CMakePrintHelpers)
 
 if(OPTION_IM_TWEAK_LIB_BUILD_SHARED)
